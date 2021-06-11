@@ -13,7 +13,7 @@ app.use(express.json({
 
 app.use(cors({ origin:true }));
 
-const port= 4000;
+
 
 
 
@@ -27,4 +27,4 @@ app.post('/create-checkout-session', createCheckoutSession);
 
 
 
-app.listen(port, () => console.log('Running on port port', port));
+app.listen(process.env.PORT, () => console.log('Running on port port', process.env.PORT));
